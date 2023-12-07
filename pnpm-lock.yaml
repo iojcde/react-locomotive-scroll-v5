@@ -8,12 +8,12 @@ dependencies:
   '@studio-freight/hamo':
     specifier: ^0.6.22
     version: 0.6.22(react-dom@18.2.0)(react@18.2.0)
-  '@studio-freight/lenis':
-    specifier: ^1.0.28
-    version: 1.0.28
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
+  locomotive-scroll:
+    specifier: 5.0.0-beta.11
+    version: 5.0.0-beta.11
   prop-types:
     specifier: ^15.8.1
     version: 15.8.1
@@ -1929,8 +1929,8 @@ packages:
       rimraf: 5.0.5
     dev: false
 
-  /@studio-freight/lenis@1.0.28:
-    resolution: {integrity: sha512-+t2rKphnNCpaCuoSZjR3/c21wuuALlgb9ldwwKaGDsk9f6le7KXNYJisp5uJJC9Gz6FG37y+IH20OMNGGJqBXA==}
+  /@studio-freight/lenis@1.0.29:
+    resolution: {integrity: sha512-z/qS8ato5m2wlxQREYj5iALcxMrhhm06vEiLqYzLI+3HmpPzPscmJ8cXNiay4bj692vOot2hyTA3WP++AQVoKA==}
     dev: false
 
   /@studio-freight/tempus@0.0.38:
@@ -2373,6 +2373,7 @@ packages:
   /clsx@2.0.0:
     resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
     engines: {node: '>=6'}
+    dev: false
 
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
@@ -3904,6 +3905,13 @@ packages:
     dependencies:
       p-locate: 5.0.0
     dev: true
+
+  /locomotive-scroll@5.0.0-beta.11:
+    resolution: {integrity: sha512-FQm0Yjk9X+euXmiaKVRVQNw/WuQXoTBp9eqPyZqsXDSwuiedaoJzzC0SGBM9CZRJ4tKaCHGa3pfp6CFgPyEq6Q==}
+    engines: {node: '>=17'}
+    dependencies:
+      '@studio-freight/lenis': 1.0.29
+    dev: false
 
   /lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}

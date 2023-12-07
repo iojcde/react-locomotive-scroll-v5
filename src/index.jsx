@@ -1,7 +1,7 @@
 'use client'
 
 import { useFrame } from '@studio-freight/hamo'
-import Lenis from '@studio-freight/lenis'
+import LocomotiveScroll from 'locomotive-scroll'
 import PropTypes from 'prop-types' // ES6
 import React, {
   createContext,
@@ -79,7 +79,7 @@ const ReactLenis = forwardRef(
     useImperativeHandle(ref, () => lenis, [lenis])
 
     useEffect(() => {
-      const lenis = new Lenis({
+      const lenis = new LocomotiveScroll({
         ...options,
         ...(!root && {
           wrapper: wrapperRef.current,
@@ -246,7 +246,7 @@ export { ReactLenis, ReactLenis as Lenis }
  */
 
 /**
- * @typedef {Object} LenisInstance
+ * @typedef {Object} any
  * @property {number} animatedScroll Current scroll value
  * @property {Dimensions} dimensions Dimensions instance
  * @property {number} direction scroll direction; 0: stopped, 1: scrolling up, -1: scrolling down

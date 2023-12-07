@@ -1,7 +1,7 @@
 {
-  "name": "@studio-freight/react-lenis",
+  "name": "@iojcde/react-locomotive-scroll-v5",
   "version": "0.0.38",
-  "description": "a react wrapper for lenis smooth scroll library",
+  "description": "a react wrapper for locomotive-scroll@v5",
   "files": [
     "dist/**/*",
     "bundled/**/*"
@@ -31,18 +31,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/studio-freight/react-lenis.git"
+    "url": "git+https://github.com/iojcde/react-locomotive-scroll-v5.git"
   },
   "keywords": [
     "react",
-    "lenis"
+    "locomotive-scroll"
   ],
-  "author": "@studio-freight",
+  "author": "@iojcde",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/studio-freight/react-lenis/issues"
-  },
-  "homepage": "https://github.com/studio-freight/react-lenis#readme",
+  "homepage": "https://github.com/iojcde/react-locomotive-scroll-v5#readme",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.0.0",
     "clsx": "^2.0.0",
@@ -76,8 +73,8 @@
   ],
   "dependencies": {
     "@studio-freight/hamo": "^0.6.22",
-    "@studio-freight/lenis": "^1.0.28",
     "clsx": "^2.0.0",
+    "locomotive-scroll": "5.0.0-beta.11",
     "prop-types": "^15.8.1",
     "zustand": "^4.4.6"
   },
