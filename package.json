@@ -23,6 +23,7 @@
     "clean:bundled": "rimraf bundled",
     "clean:dist": "rimraf dist",
     "version:patch": "npm version patch",
+    "prepublishOnly": "npm-run-all version:patch build",
     "postpublish": "git push --follow-tags",
     "build": "npm-run-all --parallel clean build:dist build:types",
     "build:types": "tsc --target esnext --allowJs -d --emitDeclarationOnly --declarationDir ./dist/types --removeComments ./src/index.jsx",
@@ -72,6 +73,7 @@
   ],
   "dependencies": {
     "@studio-freight/hamo": "^0.6.22",
+    "@types/node": "20.9.0",
     "clsx": "^2.0.0",
     "locomotive-scroll": "5.0.0-beta.11",
     "prop-types": "^15.8.1",
