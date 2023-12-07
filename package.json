@@ -26,8 +26,7 @@
     "prepublishOnly": "npm-run-all version:patch build",
     "postpublish": "git push --follow-tags",
     "build": "npm-run-all --parallel clean build:dist build:types",
-    "build:types": "tsc --target esnext --allowJs -d --emitDeclarationOnly --declarationDir ./dist/types --removeComments ./src/index.jsx",
-    "build:dist": "microbundle build -i src/index.jsx --o ./dist --jsx React.createElement"
+   "build:dist": "microbundle build -i src/index.jsx --o ./dist --jsx React.createElement"
   },
   "repository": {
     "type": "git",
