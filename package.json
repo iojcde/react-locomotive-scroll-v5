@@ -1,6 +1,6 @@
 {
   "name": "@iojcde/react-locomotive-scroll-v5",
-  "version": "0.0.40",
+  "version": "0.0.41",
   "description": "a react wrapper for locomotive-scroll@v5",
   "files": [
     "dist/**/*",
