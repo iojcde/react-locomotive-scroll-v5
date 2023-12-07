@@ -23,7 +23,6 @@
     "clean:bundled": "rimraf bundled",
     "clean:dist": "rimraf dist",
     "version:patch": "npm version patch",
-    "prepublishOnly": "npm-run-all version:patch build",
     "postpublish": "git push --follow-tags",
     "build": "npm-run-all --parallel clean build:dist build:types",
     "build:types": "tsc --target esnext --allowJs -d --emitDeclarationOnly --declarationDir ./dist/types --removeComments ./src/index.jsx",
